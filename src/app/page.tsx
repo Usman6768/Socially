@@ -5,17 +5,8 @@ import ModeToggle from "@/components/ModeToggle";
 
 export default function Home() {
   return (
-    <div>
-      <SignedOut>
-        <SignInButton mode="modal">
-          <Button>Sign In</Button>
-        </SignInButton>
-        <SignUpButton />
-      </SignedOut>
-      <ModeToggle/>
-      <SignedIn>
-        <UserButton />
-      </SignedIn>
+    <div className="m-4">
+      <h1>Home Page content</h1>
     </div>
   );
 }
