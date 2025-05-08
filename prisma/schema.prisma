@@ -28,9 +28,9 @@ model User {
   updatedAt DateTime @updatedAt
   
   // relations
-  posts Post[]
-  comments Comment[]
-  likes Like[]
+  posts Post[] // one to many
+  comments Comment[] // one to many
+  likes Like[] // one to many
 
   followers Follows[] @relation("following") // users who are following this user
   following Follows[] @relation("follower") // users this user follows
